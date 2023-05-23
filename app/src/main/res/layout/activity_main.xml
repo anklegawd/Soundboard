@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E15151"
+    android:backgroundTint="#E15151"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -70,36 +72,29 @@
         app:layout_constraintGuide_percent="0.9" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:backgroundTint="#E15151"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/kawhi_laugh" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="4dp"
+        android:backgroundTint="#E15151"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/nba_logo" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -186,9 +181,48 @@
         android:id="@+id/imageButton6"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:backgroundTint="#E15151"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/kobe_goat" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#E15151"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:srcCompat="@drawable/mike_breen" />
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="109dp"
+        android:background="#00E6DFDF"
+        android:fontFamily="@font/bungee"
+        android:text="SOUNDBOARD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:breakStrategy="balanced"
+        android:fontFamily="@font/bungee"
+        android:text="BANG"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="130dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
